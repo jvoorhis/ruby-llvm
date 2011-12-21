@@ -14,8 +14,7 @@ module LLVM
   end
 
   def load_library(libname)
-    Support::C.LLVMLoadLibraryPermanently(libname)
-    nil
+    0 == Support::C.LLVMLoadLibraryPermanently(libname)
   end
 
   module_function :load_library
