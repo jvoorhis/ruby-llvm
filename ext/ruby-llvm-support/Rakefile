@@ -6,8 +6,8 @@ require 'ffi'
 LLVM_VERSION = '3.2'
 
 def check_llvm_config(name)
-  actual_version = `#{name} --version`
-  actual_version.strip == LLVM_VERSION
+  actual_version = `#{name} --version`.strip
+  actual_version == LLVM_VERSION || actual_version == "#{LLVM_VERSION}svn"
 rescue Errno::ENOENT
   false
 end
