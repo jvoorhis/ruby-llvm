@@ -1,3 +1,7 @@
+= ruby-llvm has moved to ruby-llvm/ruby-llvm
+
+This repository has been deprecated in favor of https://github.com/ruby-llvm/ruby-llvm.
+
 = LLVM
 
 Author:: Jeremy Voorhis
